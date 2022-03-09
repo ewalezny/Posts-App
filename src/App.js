@@ -1,11 +1,8 @@
 import React from "react";
+import PostManager from "./components/PostManager";
 
 const App = () => {
-  return (
-      <>
-
-      </>
-  )
+  return <PostManager />
 }
 
 export default App;
