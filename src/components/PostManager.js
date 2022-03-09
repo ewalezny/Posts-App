@@ -28,6 +28,13 @@ const PostManager = () => {
             .catch(err => console.log(err))
     }
 
+    const showPosts = () => {
+        posts.sort((a, b) => b.id - a.id);
+        return posts.map(post => <li key={post.id} className="list-unstyled">
+            <Post post={post}/>
+        </li>)
+    }
+
     return (
         <section>
             <div className="container">
@@ -36,9 +43,7 @@ const PostManager = () => {
                         <h1 style={{marginTop: "20px", textAlign: "center"}}>Posts-App</h1>
                         <AddPost add={add}/>
                         <ul>
-                            {posts.map(post => <li key={post.id} className="list-unstyled">
-                                <Post post={post}/>
-                            </li>)}
+                            {showPosts()}
                         </ul>
                     </div>
                 </div>
