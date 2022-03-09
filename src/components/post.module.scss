@@ -1,0 +1,25 @@
+@import "src/scss/colors";
+
+.single_post {
+  padding: 20px;
+  margin-left: -30px;
+  margin-bottom: 10px;
+  text-align: justify;
+  border: 2px solid $color-primary;
+  border-radius: 10px;
+
+  h3 {
+    text-transform: uppercase;
+  }
+
+  .btn {
+    margin: 5px 0;
+    background: $color-gray;
+    color: $color-primary;
+    border-radius: 10px;
+    font-size: 1.25rem;
+    font-weight: bold;
+    padding: 5px 0;
+    width: 100%;
+  }
+}

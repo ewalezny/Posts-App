@@ -29,14 +29,21 @@ const PostManager = () => {
     }
 
     return (
-        <div>
-            <AddPost add={add}/>
-            <ul>
-                {posts.map(post => <li key={post.id}>
-                    <Post post={post}/>
-                </li>)}
-            </ul>
-        </div>
+        <section>
+            <div className="container">
+                <div className="row">
+                    <div className="col-12 pb-4">
+                        <h1 style={{marginTop: "20px", textAlign: "center"}}>Posts-App</h1>
+                        <AddPost add={add}/>
+                        <ul>
+                            {posts.map(post => <li key={post.id} className="list-unstyled">
+                                <Post post={post}/>
+                            </li>)}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
     )
 }
 

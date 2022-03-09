@@ -1,0 +1,42 @@
+@import "src/scss/colors";
+
+body {
+  background: linear-gradient(360deg,$color-secondary 10%,$color-gradient 360%);
+  color: $color-ivory;
+
+  .post_form {
+    margin: 20px 0;
+
+    .form_group {
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      background: $color-primary;
+      color: $color-gray;
+      border-radius: 10px;
+
+      .title_input {
+        width: 100%;
+        background: $color-gray;
+        color: $color-primary;
+        border-radius: 10px;
+      }
+
+      .textarea {
+        background: $color-gray;
+        color: $color-primary;
+        border-radius: 10px;
+      }
+
+      .btn {
+        margin: 5px 0;
+        background: $color-gray;
+        color: $color-primary;
+        border-radius: 10px;
+        font-size: 1.25rem;
+        font-weight: bold;
+        padding: 5px 0;
+      }
+    }
+  }
+}

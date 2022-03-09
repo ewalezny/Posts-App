@@ -33,7 +33,7 @@ const CommentsManager = () => {
         <div>
             <AddComment add={add}/>
             <ul>
-                {comments.map(comment => <li key={comment.id}>
+                {comments.map(comment => <li key={comment.id} className="list-unstyled">
                     <Comment comment={comment}/>
                 </li>)}
             </ul>

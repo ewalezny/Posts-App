@@ -1,0 +1,11 @@
+@import "src/scss/colors";
+
+.single_comment {
+  padding: 20px;
+  margin-left: -30px;
+  text-align: justify;
+
+  h4 {
+    text-transform: uppercase;
+  }
+}
